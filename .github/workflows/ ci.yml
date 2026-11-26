@@ -1,4 +1,4 @@
-name: Deploy HTML to S3
+name: copy HTML to S3
 on: push
 permissions:
   id-token: write
