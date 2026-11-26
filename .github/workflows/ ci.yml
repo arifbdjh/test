@@ -16,5 +16,5 @@ jobs:
         with:
           role-to-assume: arn:aws:iam::660463065909:role/amazon_s3_full_access
           aws-region: ap-southeast-2
-      - name: Upload website to S3
+      - name: Upload website to S3 bucket
         run: aws s3 sync index.html s3://amzon-s3-cd-buck/ --delete
