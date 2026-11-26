@@ -15,7 +15,7 @@ jobs:
         runs-on: ubuntu-latest
         environment: test
         steps:
-          - name: Build step
-            run: |
-              echo "hi, ${{vars.MY_NAME}}"
-              echo "secret: ${{secrets.DOCKER_PASS}}"
+          - name: checkout the code
+            uses: actions/checkout@v7
+          - name: print the file content
+            run: cat index.html
