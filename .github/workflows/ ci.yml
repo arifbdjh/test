@@ -1,4 +1,4 @@
-name: Deploy HTML fo S3
+name: Deploy HTML to S3
 on:
   push:
     branches: [main]
