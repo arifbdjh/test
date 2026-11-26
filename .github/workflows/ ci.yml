@@ -16,4 +16,6 @@ jobs:
         environment: test
         steps:
           - name: Build step
-            run: echo "hi, ${{vars.MY_NAME}}"
+            run: |
+              echo "hi, ${{vars.MY_NAME}}"
+              echo "secret: ${{secrets.DOCKER_PASS}}"
