@@ -1,16 +1,6 @@
 name: Hello World
 on:
   push:
-    branches:
-      - main
-      - feature
-
-  pull_request:
-    types:
-      - opened 
-    branches:
-      - main
-
 
 jobs:
     build:
